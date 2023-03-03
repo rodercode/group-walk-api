@@ -16,5 +16,6 @@ public class GuildWalk {
     @Id
     @GeneratedValue
     private Long id;
+    private String name;
     private int members;
 }
