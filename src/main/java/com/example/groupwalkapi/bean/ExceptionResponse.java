@@ -10,7 +10,7 @@ import java.time.ZonedDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ErrorResponse {
+public class ExceptionResponse {
     private int status;
     private String message;
     private ZonedDateTime data;
