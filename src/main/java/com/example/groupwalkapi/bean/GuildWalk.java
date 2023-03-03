@@ -24,10 +24,9 @@ public class GuildWalk {
     @Column(name = "members",nullable = false)
     private int members;
 
-    @Column(name = "time",nullable = false)
-    private String time;
+    @Column(name = "time")
+    private int time;
 
-    @Column(name = "guild_id")
-    private String guildId;
-
+    @Column(name = "route_id")
+    private Long routeId;
 }
