@@ -20,7 +20,7 @@ public class GuildWalkService {
         guildWalkRepo.save(guildWalk);
     }
     // get guildWalks
-    public List<GuildWalk> guildWalks(){
+    public List<GuildWalk> getGuildWalks(){
         return guildWalkRepo.findAll();
     }
 }
