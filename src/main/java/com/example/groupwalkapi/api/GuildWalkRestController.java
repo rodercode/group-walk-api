@@ -18,6 +18,7 @@ public class GuildWalkRestController {
     public GuildWalkRestController(GuildWalkService guildWalkService) {
         this.guildWalkService = guildWalkService;
     }
+
     @PostMapping
     private ResponseEntity<GuildWalk> createGuildWalk(@RequestBody GuildWalk guildWalk){
         guildWalkService.createGuildWalk(guildWalk);

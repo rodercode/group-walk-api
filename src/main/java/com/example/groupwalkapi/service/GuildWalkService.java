@@ -5,6 +5,8 @@ import com.example.groupwalkapi.repository.GuildWalkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class GuildWalkService {
     private final GuildWalkRepository guildWalkRepo;
@@ -16,6 +18,10 @@ public class GuildWalkService {
     // Create GuildWalk
     public void createGuildWalk(GuildWalk guildWalk){
         guildWalkRepo.save(guildWalk);
+    }
+    // get guildWalks
+    public List<GuildWalk> guildWalks(){
+        return guildWalkRepo.findAll();
     }
 }
 
