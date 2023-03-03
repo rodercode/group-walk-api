@@ -1,4 +1,4 @@
-package com.example.groupwalkapi.exception;
+package com.example.groupwalkapi.handler;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
