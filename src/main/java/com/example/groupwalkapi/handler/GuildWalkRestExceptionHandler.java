@@ -13,7 +13,6 @@ import java.time.ZonedDateTime;
 
 @ControllerAdvice
 public class GuildWalkRestExceptionHandler {
-
     @ExceptionHandler
     public ResponseEntity<ExceptionResponse> handleException(ListEmptyException e) {
         ExceptionResponse error = new ExceptionResponse
