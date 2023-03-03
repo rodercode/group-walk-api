@@ -11,6 +11,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Trip {
-    private GroupWalk groupWalk;
+    private GuildWalk groupWalk;
     private RouteInfo routeInfo;
 }

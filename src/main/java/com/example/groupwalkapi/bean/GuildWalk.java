@@ -1,6 +1,5 @@
 package com.example.groupwalkapi.bean;
 
-import com.example.groupwalkapi.beaninfo.RouteInfo;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -13,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter @Setter
 @Entity(name = "group_walks")
-public class GroupWalk {
+public class GuildWalk {
     @Id
     @GeneratedValue
     private Long id;

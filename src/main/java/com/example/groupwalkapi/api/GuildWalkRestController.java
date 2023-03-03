@@ -1,14 +1,14 @@
 package com.example.groupwalkapi.api;
 
-import com.example.groupwalkapi.service.GroupWalkService;
+import com.example.groupwalkapi.service.GuildWalkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GroupWalkRestController {
-    private final GroupWalkService groupWalkService;
+public class GuildWalkRestController {
+    private final GuildWalkService groupWalkService;
     @Autowired
-    public GroupWalkRestController(GroupWalkService groupWalkService) {
+    public GuildWalkRestController(GuildWalkService groupWalkService) {
         this.groupWalkService = groupWalkService;
     }
 }
