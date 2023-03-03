@@ -17,7 +17,6 @@ public class GuildWalkRestController {
     public GuildWalkRestController(GuildWalkService guildWalkService) {
         this.guildWalkService = guildWalkService;
     }
-
     @GetMapping
     private ResponseEntity<List<GuildWalk>> getGuildWalks(){
         return ResponseEntity.ok(guildWalkService.getGuildWalks());

@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter
-@Entity(name = "group_walks")
+@Entity(name = "guild_walks")
 public class GuildWalk {
     @Id
     @GeneratedValue
@@ -24,6 +24,10 @@ public class GuildWalk {
     @Column(name = "members",nullable = false)
     private int members;
 
+    @Column(name = "time",nullable = false)
+    private String time;
+
     @Column(name = "guild_id")
     private String guildId;
+
 }
